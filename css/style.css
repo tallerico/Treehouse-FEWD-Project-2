@@ -36,6 +36,11 @@ section {
     padding: 1em;
 }
 
+footer {
+    text-align: center;
+    padding: 1em;
+}
+
 h1 {
     margin: 0;
     font-family: 'Open Sans', sans-serif; 
