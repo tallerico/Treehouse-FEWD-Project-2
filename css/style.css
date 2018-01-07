@@ -42,9 +42,14 @@ h1 {
 }
 
 h2 {
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
     font-size: 1em;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: normal;
 }
 
 img {
