@@ -10,14 +10,18 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Mike Tallerico</h1>
+    <header id="header" class="clearfix">
         <nav>
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
+            <div class="upper-label">
+                <h1>Mike Tallerico</h1>
+            </div>
+            <div class="main-nav">
+                <ul>
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
         </nav>
         <img src="images/responsive-layout-profile.png" alt="Profile Image of Mike Tallerico">
         <p>
@@ -25,7 +29,7 @@
             a degree in front-end web development at Treehouse and am excited to pull all my skills to use!
         </p>
     </header>
-    <section>
+    <section id="portfolio" class="clearfix">
         <h2>PORTFOLIO</h2>
         <div class="first col">
             <img src="images/portfolio-1.png" alt="First Portfolio Image">
@@ -70,18 +74,26 @@
             </p>
         </div>
     </section>
-    <footer>
-        <h2>CONTACT</h2>
-        <p>If you're interested in chatting or want more information about
-            what I've been working on, I'd love to hear from you!
-        </p>
-        <p>Phone <span>(845)337-8141</span></p>
-        <p>Email <span>mike@talleri.co</span></p>
-        <hr>
-        <h2>Mike Tallerico</h2>
-        <ul>
-            <li>Back to Top</li>
-        </ul>
+    <footer id="contact">
+        <div class="container">
+            <h2>CONTACT</h2>
+            <p>If you're interested in chatting or want more information about
+                what I've been working on, I'd love to hear from you!
+            </p>
+            <p>Phone  <span class="footer-text">(845)337-8141</span></p>
+            <p>Email  <span class="footer-text">mike@talleri.co</span></p>
+        </div>
+        <nav class="lower-nav">
+                <div class="lower-label">
+                    <h2>Mike Tallerico</h2>
+                </div>
+                <ul>
+                    <li class="lg-link"><a href="#header">HOME</a></li>
+                    <li class="lg-link"><a href="#portfolio">PORTFOLIO</a></li>
+                    <li class="lg-link"><a href="#contact">CONTACT</a></li>
+                    <li class="btt"><a href="#header">BACK TO TOP</a></li>
+                </ul>    
+        </nav>
     </footer>
 </body>
 </html>

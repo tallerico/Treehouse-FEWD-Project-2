@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;  
+}
+
 body {
     background-color: #fafafa;
     font-family: 'Open Sans', sans-serif;
@@ -13,17 +17,17 @@ img {
     max-width: 100%;
 }
 
-nav ul {
+.main-nav ul {
     padding-left:0;
 }
 
-nav ul a{
+.main-nav ul a{
     text-decoration: none;
     font-weight: bold;
     color: slategrey;
 }
 
-nav ul li {
+.main-nav ul li {
     background-color: white;
     list-style: none;
     margin-bottom: 10px;
@@ -38,7 +42,16 @@ section {
 
 footer {
     text-align: center;
-    padding: 1em;
+    padding: 3em 1em 1em 1em;
+    color: gray;
+}
+
+a:visited {
+    color: gray;
+}
+
+p {
+    font-size: 1.3em;
 }
 
 h1 {
@@ -59,4 +72,107 @@ h3 {
 
 img {
     max-width: 100%;
+}
+
+.footer-text {
+    font-weight: bold;
+}
+
+.lower-nav {
+    margin-top: 4em;
+    border-top: solid 2px gray;
+    padding: 2em 0 2em 0;
+}
+
+.lower-nav a {
+    text-decoration: none;
+}
+
+.lower-nav h2 {
+    margin: 0;
+}
+
+.lower-nav ul {
+    padding-left:0;
+    margin: 0;
+    list-style: none;
+    float: right;
+}
+
+.lower-nav ul li {
+    font-weight: bold;
+}
+
+.lower-label {
+    display: inline-block;
+    float: left
+}
+
+.btt {
+    display: inline-block;
+}
+
+.lg-link {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    .main-nav ul li {
+        display: inline-block;
+        background-color: transparent;
+    }
+
+    header p {
+        width: 50%;
+    }
+
+    header img {
+        float: right;
+        width: 50%;
+        margin-left: 15px;
+    }
+
+    .col {
+        padding: .5em;
+        width: 50%;
+        float: right;
+    }
+
+    .container {
+        max-width: 70%;
+        margin: auto;
+    }
+
+    .lg-link {
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    .btt {
+        display: none;
+    }
+
+    .clearfix {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-nav {
+        float: right;
+        width: 50%;
+    }
+
+    .upper-label {
+        width: 50%;
+    }
+
+    .clearfix {
+        content: "";
+        display: table;
+        clear: both;
+    }
 }
