@@ -19,6 +19,10 @@ header {
     color: gray;
 }
 
+.upper-label {
+    color: orange;
+}
+
 img {
     max-width: 100%;
 }
@@ -40,6 +44,10 @@ img {
     padding: .5em;
 }
 
+.main-nav ul li:hover {
+    border: 2px solid orange;
+}
+
 section {
     text-align: center;
     background-color: white;
@@ -52,7 +60,13 @@ footer {
     color: gray;
 }
 
-a:visited {
+.skills-list {
+    padding-left: 0;
+    text-align: left;
+    list-style: none;
+}
+
+a:link, a:visited {
     color: gray;
 }
 
@@ -126,6 +140,7 @@ img {
 
     .main-nav ul li {
         display: inline-block;
+        margin-bottom: 0;
         background-color: transparent;
     }
 
@@ -181,10 +196,6 @@ img {
         margin: 16px 0 16px 0;
         float: left;
         width: 50%;
-    }
-
-    .main-nav ul li{
-       padding-bottom: 0;
     }
 
     .main-section {
