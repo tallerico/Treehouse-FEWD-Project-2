@@ -13,6 +13,12 @@ header {
     color: slategrey;
 }
 
+.top-bar {
+    padding: 1em;
+    text-align: center;
+    color: gray;
+}
+
 img {
     max-width: 100%;
 }
@@ -123,6 +129,10 @@ img {
         background-color: transparent;
     }
 
+    .top-bar {
+        text-align: center;
+    }
+
     header p {
         width: 50%;
     }
@@ -153,26 +163,43 @@ img {
         display: none;
     }
 
-    .clearfix {
+    .cf:after {
         content: "";
         display: table;
         clear: both;
     }
+
 }
 
 @media (min-width: 1024px) {
     .main-nav {
-        float: right;
         width: 50%;
+        float: right;
     }
 
     .upper-label {
+        margin: 16px 0 16px 0;
+        float: left;
         width: 50%;
     }
 
-    .clearfix {
+    .main-nav ul li{
+       padding-bottom: 0;
+    }
+
+    .main-section {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    .col {
+        width: 33%;
+    }
+
+    .cf:after {
         content: "";
         display: table;
         clear: both;
     }
+
 }
